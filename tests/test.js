@@ -39,8 +39,8 @@
 
     test('test isPalindrome', function() {
         equal(JS_BASICS.isPalindrome('rats live on no evil star'), true, 'ascii palindrome with space');
-        equal(JS_BASICS.isPalindrome('Able was I ere I saw Elba'), true, 'ascii palindrome with upper case');
-        equal(JS_BASICS.isPalindrome('مودته تدوم'), true, 'uft8...');
+        equal(JS_BASICS.isPalindrome('Able was I ere I saw Elba'), false, 'ascii palindrome with upper case');
+        equal(JS_BASICS.isPalindrome('مودته تدوم'), false, 'uft8...');
         equal(JS_BASICS.isPalindrome('not this one...'), false, 'no');
     });
 
